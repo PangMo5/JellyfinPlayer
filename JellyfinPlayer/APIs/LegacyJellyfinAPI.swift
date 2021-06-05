@@ -77,12 +77,12 @@ extension Filter {
     }
 }
 
-enum JellyfinAPI {
+enum LegacyJellyfinAPI {
     case items(globalData: GlobalData, filter: Filter, page: Int)
     case search(globalData: GlobalData, filter: Filter, searchQuery: String, page: Int)
 }
 
-extension JellyfinAPI: TargetType {
+extension LegacyJellyfinAPI: TargetType {
     
     var baseURL: URL {
         switch self {

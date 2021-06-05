@@ -11,6 +11,7 @@ import KeychainSwift
 import SwiftyJSON
 import SwiftyRequest
 import Nuke
+import JellyfinAPI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext)
@@ -99,6 +100,8 @@ struct ContentView: View {
             header.append("Version=\"\(appVersion ?? "0.0.1")\",")
             header.append("Token=\"\(globalData.authToken)\"")
             globalData.authHeader = header
+            JellyfinAPI.basePath = globalData.server?.baseURI ?? ""
+            JellyfinAPI.customHeaders = ["X-Emby-Authorization": header]
 
             let request = RestRequest(method: .get, url: (globalData.server?.baseURI ?? "") + "/Users/Me")
             request.headerParameters["X-Emby-Authorization"] = globalData.authHeader

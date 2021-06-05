@@ -13,7 +13,7 @@ import SwiftyJSON
 
 final class LibraryViewModel: ObservableObject {
     fileprivate var provider =
-        MoyaProvider<JellyfinAPI>()
+        MoyaProvider<LegacyJellyfinAPI>()
 
     @Published
     var filter: Filter

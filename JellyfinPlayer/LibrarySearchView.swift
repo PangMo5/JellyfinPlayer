@@ -57,11 +57,14 @@ struct LibrarySearchView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ScrollView(.vertical) {
                     LazyVGrid(columns: tracks) {
-                        ForEach(viewModel.items, id: \.Id) { item in
-                            NavigationLink(destination: ItemView(item: item)) {
-                                ResumeItemGridCell(item: item)
-                            }
+                        ForEach(viewModel.newItems, id: \.self) { item in
+                            Text(item.name ?? "")
                         }
+//                        ForEach(viewModel.items, id: \.Id) { item in
+//                            NavigationLink(destination: ItemView(item: item)) {
+//                                ResumeItemGridCell(item: item)
+//                            }
+//                        }
                     }.onChange(of: isPortrait) { _ in
                         recalcTracks()
                     }

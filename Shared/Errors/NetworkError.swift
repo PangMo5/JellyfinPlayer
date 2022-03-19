@@ -55,7 +55,7 @@ enum NetworkError: Error {
 			logFunction = LogManager.shared.log.error
 		case .critical:
 			logFunction = LogManager.shared.log.critical
-		case ._none:
+		case .none:
 			logFunction = LogManager.shared.log.debug
 		}
 
@@ -154,4 +154,8 @@ enum NetworkError: Error {
 
 		return errorMessage
 	}
+}
+
+public enum ErrorResponse: Error {
+    case error(Int, Data?, URLResponse?, Error)
 }

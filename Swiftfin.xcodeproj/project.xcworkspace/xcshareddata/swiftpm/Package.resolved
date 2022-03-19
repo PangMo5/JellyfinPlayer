@@ -10,15 +10,6 @@
       }
     },
     {
-      "identity" : "anycodable",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Flight-School/AnyCodable",
-      "state" : {
-        "revision" : "22f302d4c048aafcda09a4ab5b8c0b03855316fb",
-        "version" : "0.6.3"
-      }
-    },
-    {
       "identity" : "combineext",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CombineCommunity/CombineExt",
@@ -46,6 +37,15 @@
       }
     },
     {
+      "identity" : "get",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Get",
+      "state" : {
+        "revision" : "068b400e3850f0953ec25d11d3a3893c4538ffd5",
+        "version" : "0.5.0"
+      }
+    },
+    {
       "identity" : "gifu",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kaishin/Gifu",
@@ -57,10 +57,10 @@
     {
       "identity" : "jellyfin-sdk-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jellyfin/jellyfin-sdk-swift",
+      "location" : "https://github.com/PangMo5/jellyfin-sdk-swift",
       "state" : {
         "branch" : "main",
-        "revision" : "f315671ced976a7ec75ce6a1f37e00b4880cbf4b"
+        "revision" : "6b2ea1be5cb7cace50f555867acff6f222aa8d21"
       }
     },
     {
@@ -178,6 +178,15 @@
       "state" : {
         "revision" : "337dd5f158182620b2bb53c6847f8874a0117b2f",
         "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "urlqueryencoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/URLQueryEncoder",
+      "state" : {
+        "branch" : "0.2.0",
+        "revision" : "4cc975d4d075d0e62699a796a08284e217d4ee93"
       }
     }
   ],
